@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISOCENTRO - Transformación Digital ISO & IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B3255',
+                        secondary: '#0072C4',
+                        accent: '#A8AAAB',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #0B3255 0%, #0072C4 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-padding {
+            padding: 5rem 1.5rem;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://imgur.com/5S7ELks.png" alt="Logo ISOCENTRO" class="h-12" onerror="this.src='https://via.placeholder.com/150x50?text=ISOCENTRO'">
+                <span class="text-primary font-bold text-xl tracking-tight hidden md:block">ISOCENTRO</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-primary font-medium">
+                <a href="#inicio" class="hover:text-secondary">Inicio</a>
+                <a href="#quienes-somos" class="hover:text-secondary">¿Quiénes Somos?</a>
+                <a href="#servicios" class="hover:text-secondary">Servicios</a>
+                <a href="#objetivos" class="hover:text-secondary">Objetivos</a>
+                <a href="#contacto" class="px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary transition">Contáctanos</a>
+            </div>
+            <button class="md:hidden text-primary text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="gradient-bg text-white section-padding flex flex-col items-center justify-center text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                Transformamos la Cultura de Calidad <br>con Inteligencia Artificial
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-blue-100 max-w-3xl mx-auto">
+                Eliminamos la burocracia de las normas ISO, convirtiéndolas en una ventaja competitiva ágil y automatizada.
+            </p>
+            <div id="hero-image-container" class="mt-8 rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto border-4 border-white/20">
+                <div id="image-loader" class="h-64 flex items-center justify-center bg-primary/50">
+                    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-white"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiénes Somos -->
+    <section id="quienes-somos" class="section-padding bg-light">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-secondary font-bold tracking-widest uppercase text-sm">Nuestra Misión</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mt-2 mb-6">¿QUIÉNES SOMOS?</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    En <strong>ISOCENTRO</strong>, no solo gestionamos normativas; transformamos la cultura de calidad de las organizaciones. Nacimos con la misión de eliminar la burocracia y la complejidad tradicional de las normas ISO.
+                </p>
+                <p class="text-lg leading-relaxed mb-6">
+                    Nos especializamos en el cumplimiento normativo que fusiona dos mundos: la rigurosidad de los estándares internacionales y la potencia de la <strong>Inteligencia Artificial de última generación</strong>.
+                </p>
+                <div class="flex space-x-4">
+                    <div class="flex items-center space-x-2 text-secondary">
+                        <i class="fas fa-check-circle"></i>
+                        <span>ISO 9001</span>
+                    </div>
+                    <div class="flex items-center space-x-2 text-secondary">
+                        <i class="fas fa-check-circle"></i>
+                        <span>ISO 27001</span>
+                    </div>
+                    <div class="flex items-center space-x-2 text-secondary">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Auditoría IA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 bg-accent/20 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=600" alt="Equipo trabajando" class="object-cover h-full w-full">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg h-64 mt-8 bg-accent/20 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600" alt="Tecnología IA" class="object-cover h-full w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Especializados -->
+    <section id="servicios" class="section-padding">
+        <div class="container mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Especialización y Eficiencia</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto"></div>
+        </div>
+        <div class="container mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="p-8 bg-white border border-gray-100 shadow-xl rounded-2xl card-hover">
+                <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-file-invoice"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-4">Gestión Documental Inteligente</h3>
+                <p class="text-gray-600">Nuestro software es un ecosistema vivo que organiza, actualiza y controla tu documentación de forma autónoma.</p>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="p-8 bg-white border border-gray-100 shadow-xl rounded-2xl card-hover">
+                <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-4">Motor de IA para Auditorías</h3>
+                <p class="text-gray-600">Un "auditor 24/7" que analiza procesos, detecta fallas y predice riesgos operativos antes que un humano.</p>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="p-8 bg-white border border-gray-100 shadow-xl rounded-2xl card-hover">
+                <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center text-2xl mb-6">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-4">Eficiencia Radical</h3>
+                <p class="text-gray-600">Reducción del 60% en tiempos de implementación, permitiendo que tu equipo se enfoque en innovar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos SMART -->
+    <section id="objetivos" class="section-padding bg-primary text-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Objetivos SMART</h2>
+                <p class="text-blue-200">Resultados tangibles impulsados por tecnología</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 p-6 rounded-xl border border-white/10">
+                    <h4 class="font-bold text-secondary text-lg mb-3">Eficiencia</h4>
+                    <p class="text-sm">Reducir en un 50% el tiempo de creación documental con IA, completando el sistema en 3 meses.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-xl border border-white/10">
+                    <h4 class="font-bold text-secondary text-lg mb-3">Riesgos</h4>
+                    <p class="text-sm">Aumentar la detección de riesgos en un 40% mediante algoritmos de análisis predictivo.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-xl border border-white/10">
+                    <h4 class="font-bold text-secondary text-lg mb-3">Capacitación</h4>
+                    <p class="text-sm">Lograr que el 100% del personal apruebe evaluaciones ISO mediante micro-learning con IA.</p>
+                </div>
+                <div class="bg-white/10 p-6 rounded-xl border border-white/10">
+                    <h4 class="font-bold text-secondary text-lg mb-3">Retorno (ROI)</h4>
+                    <p class="text-sm">Disminuir costos operativos en un 20% anual gracias a la automatización de tareas repetitivas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades Relevantes -->
+    <section class="section-padding bg-light">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center">
+                        <i class="fas fa-cogs mr-3"></i> Requisitos Funcionales
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-user-shield text-secondary mt-1 mr-3"></i>
+                            <span><strong>Administración Inteligente:</strong> Control de acceso por roles (Admin, Auditor, Colaborador).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-history text-secondary mt-1 mr-3"></i>
+                            <span><strong>Trazabilidad Documental:</strong> Gestión de PDFs con control de versiones automático vinculados a ISO 9001/27001.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-search text-secondary mt-1 mr-3"></i>
+                            <span><strong>Búsqueda Natural:</strong> Chatbot interactivo para localizar evidencias al instante sin carpetas manuales.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center">
+                        <i class="fas fa-shield-alt mr-3"></i> Requisitos No Funcionales
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-mobile-alt text-secondary mt-1 mr-3"></i>
+                            <span><strong>Diseño Adaptable:</strong> Interfaz 100% compatible con móviles y tablets para auditorías en planta.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-double text-secondary mt-1 mr-3"></i>
+                            <span><strong>Disponibilidad:</strong> 99.5% de tiempo de actividad garantizado para días de auditoría externa.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-magic text-secondary mt-1 mr-3"></i>
+                            <span><strong>Usabilidad UX:</strong> Diseño centrado en el usuario, intuitivo y sin necesidad de capacitación técnica extensa.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página / Contacto -->
+    <footer id="contacto" class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <img src="https://imgur.com/7vLlYGo.png" alt="Logo ISOCENTRO" style="width: 50%; height: auto;" onerror="this.src='https://via.placeholder.com/175x50?text=ISOCENTRO'">
+                    <p class="text-blue-100">Fusionando la rigurosidad normativa con la potencia de la Inteligencia Artificial.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Nuestras Redes</h4>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center space-x-3 text-blue-100 hover:text-white transition">
+                            <i class="fab fa-tiktok text-xl w-8"></i>
+                            <span>iso.centro9001</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 text-blue-100 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl w-8"></i>
+                            <span>@isocentro</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 text-blue-100 hover:text-white transition">
+                            <i class="fab fa-facebook text-xl w-8"></i>
+                            <span>isocentro</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Contacto Directo</h4>
+                    <a href="mailto:iso.centro9001@gmail.com" class="flex items-center space-x-3 text-blue-100 hover:text-white transition mb-4">
+                        <i class="fas fa-envelope text-xl w-8"></i>
+                        <span>iso.centro9001@gmail.com</span>
+                    </a>
+                    <div class="mt-6 p-4 bg-white/5 rounded-lg border border-white/10">
+                        <p class="text-sm italic">"Agilidad, Cumplimiento y Tecnología 24/7"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-blue-300 text-sm">
+                <p>&copy; 2026 ISOCENTRO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const apiKey = ""; // Se inyecta en el entorno de ejecución
+
+        async function generateHeroImage() {
+            const prompt = "A professional, high-tech corporate header image showing a futuristic office dashboard with artificial intelligence icons, data visualization, and ISO certification symbols. Clean, modern design with a professional blue and gray color palette. 4k resolution.";
+            const container = document.getElementById('hero-image-container');
+            const loader = document.getElementById('image-loader');
+
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        instances: [{ prompt: prompt }],
+                        parameters: { sampleCount: 1 }
+                    })
+                });
+
+                if (!response.ok) throw new Error('Error en la generación');
+
+                const result = await response.json();
+                const imageUrl = `data:image/png;base64,${result.predictions[0].bytesBase64Encoded}`;
+                
+                const img = document.createElement('img');
+                img.src = imageUrl;
+                img.alt = "Promoción ISOCENTRO IA";
+                img.className = "w-full h-full object-cover";
+                
+                loader.classList.add('hidden');
+                container.appendChild(img);
+            } catch (error) {
+                const loaderImg = document.createElement("img");
+		loaderImg.src = "https://i.imgur.com/GWry3uV.gif";
+		loaderImg.alt = "Cargando...";
+		loaderImg.className = "w-300 h-600 object-contain";
+
+		loader.innerHTML = "";
+		loader.appendChild(loaderImg);
+
+            }
+        }
+
+        window.onload = function() {
+            generateHeroImage();
+        };
+    </script>
+</body>
+</html>
